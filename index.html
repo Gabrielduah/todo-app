@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <div class="todo-header">
+        <h2>Todo</h2>
+        <img src="images/icon-moon.svg" class="moon">
+      </div>
+
+      <!-- CREATING TODOLIST CONTAINER -->
+      <div class="input-text">
+        <input type="text" placeholder="Creating a new todo..." class="input-todo">
+        <button type="submit" class="addTask"></button>
+      </div>
+      <ul class="todo-container" id="todoList">
+        <!-- Todo list items will be dynamically added here -->
+      </ul>
+      <div class="todo-info">
+        <div class="todo-items">
+          <p class="item-counter"></p>
+        </div>
+        <div class="todo-status">
+          <p class="active" onclick="showAllTodos()">All</p>
+          <p onclick="showActiveTodos()" class="active-filter">Active</p>
+          <p onclick="showCompletedTodos()" class="completed-filter">Completed</p>
+        </div>
+        <div class="todo-items">
+          <p class="clear-complete"> Clear Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
